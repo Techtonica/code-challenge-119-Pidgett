@@ -21,6 +21,19 @@ const otherRoads = [
   "Osito's Treehouse <=> Zorro's Den"
 ];
 
+
+
+let newRoadArray = [];
+function roadConversion(otherRoads){
+  
+  for (let i = 0; i < otherRoads.length; i++){
+      newRoadArray.push(otherRoads[i].split(" <=> "));
+  }
+    console.log(newRoadArray);
+    return newRoadArray;
+}
+roadConversion(otherRoads);
+console.log(newRoadArray);
 /*
   Process the "otherRoads" array of strings so you can call addRoad for each pair of locations.
 */
